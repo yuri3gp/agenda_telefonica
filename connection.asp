@@ -4,7 +4,7 @@ Class Connection
     
     Private Sub Class_Initialize()
         Set dbConn = Server.CreateObject("ADODB.Connection")
-        dbConn.Open "Driver={MySQL ODBC 5.1 Driver};Server=localhost;Database=asp_schedule;Uid=root;Pwd=;"
+        dbConn.Open "Driver={MySQL ODBC 5.1 Driver};Server=localhost;Database=asp_schedule;Uid=root;Pwd=root;"
     End Sub
     
     Public Function GetConnection()
