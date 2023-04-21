@@ -16,9 +16,6 @@ Class PeopleController
     End Function
 
     Function Update(id,people)
-        dim objconn
-        set conn = new Connection
-        set objconn = conn.GetConnection()
     End Function
 
     Function List(sql)
