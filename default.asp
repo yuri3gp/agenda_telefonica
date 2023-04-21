@@ -1,16 +1,15 @@
-<!--#include file="./crud/peopleController.asp"-->
-<!--#include file="./crud/peopleModel.asp"-->
+<!--#include file="peopleController.asp"-->
+<!--#include file="people.asp"-->
 <%
-Dim type = Request.Form("type")
+    Function post()
+        Dim objpeople
+        Set objpeople = New People
+        objpeople.name = "Moacir - duran"
+        objpeople.phone = "85956595"
+        Dim objpeopleController
+        Set objpeopleController = New PeopleController
+        objpeopleController.Create(objpeople)
+    End Function
 
-Select Case type
-    Case "post"
-        Dim people
-        Set people = New People
-        people.name = Request.Form("name")
-        people.phone = Request.Form("phone")
-        Dim peopleController
-        Set peopleController = New PeopleController
-        peopleController.Create(people)
-End Select
+    post()
 %>
