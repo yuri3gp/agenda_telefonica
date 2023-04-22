@@ -9,7 +9,7 @@
     Dim objpeopleController
     Set objpeopleController = New PeopleController
 
-    objpeopleController.Create(objpeople)
-    objpeopleController.Update(objpeople)
-    objpeopleController.Delete(objpeople.id)
+    ' objpeopleController.Create(objpeople)
+    ' objpeopleController.Update(objpeople)
+    ' objpeopleController.Delete(objpeople.id)
 %>
