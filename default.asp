@@ -1,15 +1,15 @@
-<!--#include file="peopleController.asp"-->
-<!--#include file="people.asp"-->
+<!--#include file="./crud/peopleController.asp"-->
+<!--#include file="./crud/peopleModel.asp"-->
 <%
-    Function post()
-        Dim objpeople
-        Set objpeople = New People
-        objpeople.name = "Moacir - duran"
-        objpeople.phone = "85956595"
-        Dim objpeopleController
-        Set objpeopleController = New PeopleController
-        objpeopleController.Create(objpeople)
-    End Function
+    Dim objpeople
+    Set objpeople = New People
+    objpeople.id = 1
+    objpeople.name = "Update works"
+    objpeople.phone = "85956595"
+    Dim objpeopleController
+    Set objpeopleController = New PeopleController
 
-    post()
+    objpeopleController.Create(objpeople)
+    objpeopleController.Update(objpeople)
+    objpeopleController.Delete(objpeople.id)
 %>
