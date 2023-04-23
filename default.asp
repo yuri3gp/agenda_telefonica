@@ -12,4 +12,6 @@
     ' objpeopleController.Create(objpeople)
     ' objpeopleController.Update(objpeople)
     ' objpeopleController.Delete(objpeople.id)
+    returnlist = objpeopleController.List(1,5,"id")
+
 %>
