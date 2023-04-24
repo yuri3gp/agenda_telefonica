@@ -1,5 +1,5 @@
 <!--#include file="./crud/peopleController.asp"-->
-<!--#include file="./crud/peopleModel.asp"-->
+
 <%
     Dim objpeople
     Set objpeople = New People
@@ -12,6 +12,5 @@
     ' objpeopleController.Create(objpeople)
     ' objpeopleController.Update(objpeople)
     ' objpeopleController.Delete(objpeople.id)
-    returnlist = objpeopleController.List(1,5,"id")
-
+    ' returnlist = objpeopleController.List(0,5,"id")
 %>
